@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  background-color: #14382b;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(url(IMAGENES/Fondo.jpg));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 40rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero nav a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: .2rem;
+  border-bottom: 2px solid transparent;
+  transition: .3s;
+}
+
+.hero nav a:hover {
+  color: #f2b705;
+  border-bottom-color: #f2b705;
+}
+
+.redes {
+  display: flex;
+  gap: .8rem;
+}
+
+.redes a {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: white;
+  color: #14382b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.redes a:hover {
+  background: #f2b705;
+  transform: translateY(-3px);
+}
+
+/* ----- Páginas internas ----- */
+.cabecera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: white;
+  border-bottom: 3px solid #f2b705;
+  text-align: center;
+  padding: .6rem 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: #14382b;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: #14382b;
+  text-decoration: none;
+  padding-bottom: .2rem;
+  border-bottom: 2px solid transparent;
+  transition: .3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+  color: #3d8b5a;
+  border-bottom-color: #f2b705;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 9rem 1rem 2rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.portada {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.titulo-blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.titulo-blog h2 {
+  flex: 1;
+  text-align: center;
+  color: #14382b;
+  font-size: 2rem;
+}
+
+.autor {
+  text-align: center;
+  font-size: .8rem;
+}
+
+.autor img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto .3rem;
+}
+
+main .redes {
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+main .redes a {
+  background: #14382b;
+  color: white;
+}
+
+main .redes a:hover {
+  background: #f2b705;
+  color: #14382b;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: .9rem;
+  color: #14382b;
+}
+/* ----- Galería ----- */
+.titulo-pagina {
+  text-align: center;
+  color: #14382b;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.galeria figure {
+  width: calc(33.333% - 1rem);
+  min-width: 220px;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,.3);
+  filter: grayscale(100%);
+  transition: filter .4s, transform .4s;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.galeria img:hover {
+  filter: grayscale(0);
+  transform: scale(1.06);
+}
+
+.galeria figcaption {
+  font-style: italic;
+  color: #3d8b5a;
+  margin-top: .4rem;
+}
+
+/* ----- Videos ----- */
+.video {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem auto 0;
+  box-shadow: 3px 3px 8px rgba(0,0,0,.4);
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.pie-video {
+  text-align: center;
+  font-size: .9rem;
+  margin: .5rem auto 1.5rem;
+}
